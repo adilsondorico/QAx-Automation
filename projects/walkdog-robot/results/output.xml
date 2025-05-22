@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-17T21:04:41.937687" rpa="false" schemaversion="5">
+<suite id="s1" name="Walkdog-Robot" source="C:\QAx\projects\walkdog-robot">
+<suite id="s1-s1" name="Tests" source="C:\QAx\projects\walkdog-robot\tests">
+<suite id="s1-s1-s1" name="Signup" source="C:\QAx\projects\walkdog-robot\tests\signup.robot">
+<test id="s1-s1-s1-t1" name="CPF incorreto" line="32">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-01-17T21:04:42.718708" level="INFO">${dog_walker} = {'name': 'passeador', 'email': 'passeador@gmail.com', 'cpf': '000000141aa', 'cep': '04534011', 'addressStreet': 'Rua Joaquim Floriano', 'addressDistrict': 'Itaim Bibi', 'addressCityUf': 'São Paulo/SP'...</msg>
+<var>${dog_walker}</var>
+<arg>name=passeador</arg>
+<arg>email=passeador@gmail.com</arg>
+<arg>cpf=000000141aa</arg>
+<arg>cep=04534011</arg>
+<arg>addressStreet=Rua Joaquim Floriano</arg>
+<arg>addressDistrict=Itaim Bibi</arg>
+<arg>addressCityUf=São Paulo/SP</arg>
+<arg>addressNumber=123</arg>
+<arg>addressDetails=123abc</arg>
+<arg>CNH=toretto.jpg</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-01-17T21:04:42.717703" elapsed="0.001005"/>
+</kw>
+<kw name="Start session" owner="base">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-01-17T21:04:42.720708" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\QAx\\projects\\walkdog-robot\\results\\browser\\traces\\f5d0c561-e63d-4888-81be-98f8b8fb3057"}</msg>
+<msg time="2024-01-17T21:04:48.366680" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\QAx\\projects\\walkdog-robot\\results\\browser\\traces\\f5d0c561-e63d-4888-81be-98f8b8fb3057"}</msg>
+<arg>browser=chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-01-17T21:04:42.719708" elapsed="5.646972"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-01-17T21:04:49.113728" level="INFO">Successfully initialized new page object and opened url: https://walkdog.vercel.app</msg>
+<msg time="2024-01-17T21:04:49.113728" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>https://walkdog.vercel.app</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-01-17T21:04:48.366680" elapsed="0.747048"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-01-17T21:04:49.150268" level="INFO">Waited for Element with selector css=h1 &gt;&gt; text=Cuidado e diversão em cada passo at state visible</msg>
+<arg>css=h1 &gt;&gt; text=Cuidado e diversão em cada passo</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-01-17T21:04:49.114733" elapsed="0.035535"/>
+</kw>
+<arg>${dog_walker}</arg>
+<status status="PASS" start="2024-01-17T21:04:42.718708" elapsed="6.431560"/>
+</kw>
+<kw name="Go to signup page" owner="signup">
+<kw name="Click" owner="Browser">
+<arg>css=a[href="/signup"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-01-17T21:04:49.151440" elapsed="0.067870"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-01-17T21:04:49.232468" level="INFO">Waited for Element with selector form h1 at state visible</msg>
+<arg>form h1</arg>
+<arg>visible</arg>
+<arg>3</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-01-17T21:04:49.219310" elapsed="0.013158"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-01-17T21:04:49.269178" level="INFO">Text: 'Faça seu cadastro'</msg>
+<arg>form h1</arg>
+<arg>equal</arg>
+<arg>${expected_title}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-01-17T21:04:49.232468" elapsed="0.036710"/>
+</kw>
+<arg>Faça seu cadastro</arg>
+<status status="PASS" start="2024-01-17T21:04:49.151440" elapsed="0.117738"/>
+</kw>
+<kw name="Submit signup form" owner="signup">
+<kw name="Click" owner="Browser">
+<arg>css=.button-register</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-01-17T21:04:49.270181" elapsed="0.069078"/>
+</kw>
+<status status="PASS" start="2024-01-17T21:04:49.270181" elapsed="0.069078"/>
+</kw>
+<kw name="Alert should be" owner="signup">
+<msg time="2024-01-17T21:04:49.341200" level="FAIL">User keyword cannot be empty.</msg>
+<arg>CPF inválido</arg>
+<status status="FAIL" start="2024-01-17T21:04:49.340773" elapsed="0.001469">User keyword cannot be empty.</status>
+</kw>
+<kw name="Finish session" owner="base">
+<status status="NOT RUN" start="2024-01-17T21:04:49.342242" elapsed="0.001337"/>
+</kw>
+<tag>cpf_inv</tag>
+<status status="FAIL" start="2024-01-17T21:04:42.714720" elapsed="6.628859">User keyword cannot be empty.</status>
+</test>
+<doc>Suite de testes de cadastro de dog walker</doc>
+<status status="FAIL" start="2024-01-17T21:04:41.964016" elapsed="7.490975"/>
+</suite>
+<status status="FAIL" start="2024-01-17T21:04:41.961967" elapsed="7.502513"/>
+</suite>
+<status status="FAIL" start="2024-01-17T21:04:41.938887" elapsed="7.527340"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">cpf_inv</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Walkdog-Robot">Walkdog-Robot</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Tests">Walkdog-Robot.Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Signup">Walkdog-Robot.Tests.Signup</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

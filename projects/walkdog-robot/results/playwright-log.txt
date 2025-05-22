@@ -1,0 +1,58 @@
+{"level":30,"time":"2024-01-18T00:04:42.547Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Listening on 61765"}
+{"level":30,"time":"2024-01-18T00:04:42.713Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-01-18T00:04:42.713Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-01-18T00:04:42.716Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-01-18T00:04:42.716Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-01-18T00:04:42.722Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-01-18T00:04:48.364Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Adding browser to stack: chromium, version: 120.0.6099.28"}
+{"level":30,"time":"2024-01-18T00:04:48.365Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-01-18T00:04:48.365Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-01-18T00:04:48.370Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-01-18T00:04:48.371Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-01-18T00:04:48.382Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Changed active context"}
+{"level":30,"time":"2024-01-18T00:04:48.621Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Video path: undefined"}
+{"level":30,"time":"2024-01-18T00:04:48.621Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Changed active page"}
+{"level":30,"time":"2024-01-18T00:04:49.111Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"End of node method newPage"}
+{"level":30,"time":"2024-01-18T00:04:49.117Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-01-18T00:04:49.117Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Strict mode is enabled, find Locator with css=h1 >> text=Cuidado e diversão em cada passo in page."}
+{"level":30,"time":"2024-01-18T00:04:49.149Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-01-18T00:04:49.153Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Start of node method click"}
+{"level":30,"time":"2024-01-18T00:04:49.154Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Strict mode is enabled, find Locator with css=a[href=\"/signup\"] in page."}
+{"level":30,"time":"2024-01-18T00:04:49.218Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"End of node method click"}
+{"level":30,"time":"2024-01-18T00:04:49.221Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-01-18T00:04:49.221Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Strict mode is enabled, find Locator with form h1 in page."}
+{"level":30,"time":"2024-01-18T00:04:49.231Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-01-18T00:04:49.236Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Start of node method getText"}
+{"level":30,"time":"2024-01-18T00:04:49.236Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Strict mode is enabled, find Locator with form h1 in page."}
+{"level":30,"time":"2024-01-18T00:04:49.267Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Retrieved text for element form h1 containing Faça seu cadastro"}
+{"level":30,"time":"2024-01-18T00:04:49.268Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"End of node method getText"}
+{"level":30,"time":"2024-01-18T00:04:49.272Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Start of node method click"}
+{"level":30,"time":"2024-01-18T00:04:49.272Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Strict mode is enabled, find Locator with css=.button-register in page."}
+{"level":30,"time":"2024-01-18T00:04:49.338Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"End of node method click"}
+{"level":30,"time":"2024-01-18T00:04:49.350Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-01-18T00:04:49.352Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-01-18T00:04:49.355Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-01-18T00:04:49.371Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-01-18T00:04:49.375Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Changed active context"}
+{"level":30,"time":"2024-01-18T00:04:49.375Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Changing current active page: page=5765a993-570e-4735-9c53-4cb774d82ab7"}
+{"level":30,"time":"2024-01-18T00:04:49.375Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Changed active page"}
+{"level":30,"time":"2024-01-18T00:04:49.392Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-01-18T00:04:49.394Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-01-18T00:04:49.398Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-01-18T00:04:49.399Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-01-18T00:04:49.402Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-01-18T00:04:49.402Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-01-18T00:04:49.405Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Changing current active page: page=5765a993-570e-4735-9c53-4cb774d82ab7"}
+{"level":30,"time":"2024-01-18T00:04:49.405Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Changed active page"}
+{"level":30,"time":"2024-01-18T00:04:49.411Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-01-18T00:04:49.415Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-01-18T00:04:49.417Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Changed active context"}
+{"level":30,"time":"2024-01-18T00:04:49.417Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Changing current active page: page=5765a993-570e-4735-9c53-4cb774d82ab7"}
+{"level":30,"time":"2024-01-18T00:04:49.417Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Changed active page"}
+{"level":30,"time":"2024-01-18T00:04:49.420Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Start of node method closeContext"}
+{"level":30,"time":"2024-01-18T00:04:49.436Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Removed page=508617d9-65ba-43e7-9e09-59d8cea50308 from context=2db755c8-018d-4b41-adc8-737e0ad1fd21 page stack"}
+{"level":30,"time":"2024-01-18T00:04:49.452Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"End of node method closeContext"}
+{"level":30,"time":"2024-01-18T00:04:49.459Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-01-18T00:04:49.459Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-01-18T00:04:49.505Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-01-18T00:04:49.630Z","pid":24572,"hostname":"DORICO-VJVL595M","msg":"End of node method closeAllBrowsers"}
