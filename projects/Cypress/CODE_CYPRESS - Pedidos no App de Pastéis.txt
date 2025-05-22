@@ -1,0 +1,44 @@
+describe('Testes de Pedidos no App de Pastéis', () => {
+  before(() => {
+    // Ação antes de todos os testes
+    cy.visit('URL_DO_APP');
+  });
+
+  it('CT 1 - Login no app e acesso a lista de pastéis.', () => {
+    cy.get('#matricula').type('matricula');
+    cy.get('#username').type('garcom');
+    cy.get('#password').type('senha');
+    cy.get('#login-button').click();
+    cy.url().should('include', '/dashboard'); // Verifica se o login foi com sucesso.
+    cy.get('#lista-pasteis').should('be.visible'); // Verifica se a lista de pastéis está visível
+  });
+
+  it('CT 2 - Enviando pedido com um ou mais ou mais pastéis no mesmo pedido mesmo que seja repetido.', () => {
+    cy.get('.pastel').first().click();
+    cy.get('.pastel2').eq(1).click();
+    cy.get('#mesa-select').select('Mesa 2');
+    cy.get('.enviar-pedido').click();
+    cy.should('.notificacao').should('contain', 'Pedido enviado com sucesso');
+  });
+
+  it('CT 3 - Enviando pedido com informações adicionais/observações.', () => {
+    cy.get('.pastel').first().click();
+    cy.get('.pastel2').eq(1).click();
+    cy.get('#observacao').type('observacao');
+    cy.get('#mesa-select').select('Mesa 2');
+    cy.get('.enviar-pedido').click();
+    cy.get('#notificacao').should('contain', 'Pedido enviado com sucesso');
+  });
+
+  it('CT 4 - Validar o recebimento de aviso de pedido pronto para entrega.', () => {
+    // Simular recebimento de notificação
+    cy.wait(5000); // Aguarda 5 segundos simulando que o pedido foi preparado
+    cy.get('.notificacao').should('contain', 'Pedido da mesa 2 está pronto');
+  });
+
+  it('CT 5 - Fechamento da conta da mesa 2.', () => {
+    cy.get('#fechar-conta').click();
+    cy.get('.conta').should('contain', 'Total a pagar');
+    // Verifica se a conta é exibida
+  });
+});

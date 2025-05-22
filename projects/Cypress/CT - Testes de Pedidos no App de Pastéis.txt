@@ -1,0 +1,64 @@
+Testes de Pedidos no App de Pastéis.
+
+
+CT 1 - Login no app e acesso a lista de pastéis.
+
+Passos
+1.1 Usuário/garçom deve entrar com "Nome, Senha e Matrícula"
+1.2 Usuário/garçom acessa a área de pedidos/cardápio com o Nome do pastel, preço e opção para ativar/desativar.
+
+Resultado Esperado
+1.1 O app deve validar se os dados estão corretos e realizar o login com sucesso.
+1.2 O app deve apresentar o cardápio/lista de pastéis disponíveis para pedidos.
+OBS: Pastéis sem preço ou inativos no sistema não serão apresentados no cardápio para o usuário/garçom.
+OBS: Caso o Usuário ou Senha ou Matrícula estejam errados, o app não deve realizar o login.
+
+
+
+CT 2 - Enviando pedido com um ou mais ou mais pastéis no mesmo pedido mesmo que seja repetido.
+
+Passos
+2.1 No cardápio o usuário/garçom seleciona mais de um pastel de sabores iguais e diferentes.
+2.2 Gera o pedido com o número da mesa (ex: mesa 2) e envia para a cozinha.
+
+Resultado Esperado
+2.1 O app deve permitir a seleção de mais de um pastel, caso seja repetido deve adicionar a quantidade.
+2.2 O pedido deve ser fechado e enviado para a cozinha com sucesso.
+OBS: As informações do pedido deve conter "Pastéis, Quantidades, vinculado com usuário/garçom, mesa e preço final
+
+
+
+CT 3 - Enviando pedido com informações adicionais/observações. (opcional)
+
+Passos
+3.1 O usuário/garçom gera o pedido e preenche o campo de informação adicional/observação e envia para a cozinha.
+OBS: campo de observação - (ex: "retirar azeitona")
+
+Resultado Esperado
+3.1 O pedido deve ser fechado e enviado para a cozinha com as informações adicionais com sucesso.
+
+
+
+CT 4 - Validar o recebimento de aviso de pedido pronto para entrega.
+
+Passos
+4.1 O cozinha envia um aviso ao usuário/garçom que o pedido da mesa 2 está pronto para entrega. 
+
+Resultado Esperado
+4.1 O usuário/garçom deve receber no app uma mensagem que o pedido da mesa 2 está pronto para entrega.
+ex: (pedido mesa 2 pronto)
+
+
+
+CT 5 - Fechamento da conta da mesa.
+
+Passos
+5.1  O usuário/garçom fecha a conta da mesa 2 e envia para o caixa.
+
+Resultado Esperado
+5.1 A conta da mesa será fechada com base em todos os pedidos registrados no aplicativo para a mesa 2.
+E deve refletir todas as compras feitas.
+
+
+     
+

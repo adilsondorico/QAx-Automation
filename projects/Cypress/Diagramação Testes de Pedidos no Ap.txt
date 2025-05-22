@@ -1,0 +1,104 @@
+Diagramação Testes de Pedidos no App de Pastéis
+
+
+       Início        
+
+          |
+          v
+
+    Autenticação do     
+       Garçom         
+
+          |
+          v
+ 
+    Exibição da Lista  
+       de Pastéis      
+
+          |
+          v
+
+    Selecionar Pastéis 
+
+          |
+          v
+
+    Adicionar Observações
+       (Opcional)   
+
+          |
+          v
+
+    Enviar Pedido    
+
+          |
+          v
+
+    Receber Notificação  
+    de Pedido Pronto   
+
+          |
+          v
+
+     Fechar Conta     
+
+          |
+          v
+
+         Fim     
+
+
+
+Diagramação Escrita do Teste
+
+Início
+
+O robô inicia o processo.
+
+
+
+Autenticação do Garçom
+
+O robô faz login como um garçom autorizado.
+
+
+
+Exibição da Lista de Pastéis
+
+O robô acessa a lista de pastéis disponíveis.
+
+
+
+Selecionar Pastéis
+
+O robô seleciona um ou mais pastéis da lista.
+
+
+
+Adicionar Observações (Opcional)
+
+O robô pode adicionar observações a um ou mais pastéis.
+
+
+
+Enviar Pedido
+
+O robô envia o pedido para uma mesa específica.
+
+
+
+Receber Notificação de Pedido Pronto
+
+O robô aguarda a notificação de que o pedido está pronto.
+
+
+
+Fechar Conta
+
+O robô fecha a conta da mesa com base nos pedidos feitos.
+
+
+
+Fim
+
+O robô finaliza o processo.
